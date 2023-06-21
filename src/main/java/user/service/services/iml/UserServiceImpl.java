@@ -30,6 +30,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User getUser(String userId) {
-        return userRepository.findById(userId).orElseThrow(()->new ResourceNotFoundException("USer with given id is not found on server !!:"+userId));
+        return userRepository.findById(userId).orElseThrow(()->new ResourceNotFoundException("User with given id is not found on server !!:"+userId));
     }
 }
